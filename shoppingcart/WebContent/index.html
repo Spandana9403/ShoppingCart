@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="script/script.js"></script>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+
+<style>
+body
+{
+  background-color:white;
+  margin:0;
+  border:0;
+  width:100%;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="top">
+<a href="index.html"><h3>Book Shopping Cart</h3></a>
+<img src="images/books.png" title="book">
+<input list="search" class="search" placeholder="Search For Books..."><datalist id="search"></datalist><script>search1()</script>
+<input type="button" onclick="search()" id="searchbutton" style="background-image:url(images/searchbutton.gif)">
+<form class="login">
+<div style="display:none" id="welcome"></div>
+<div style="display:none" id="wishlist"><a href="showwishlist.jsp"><img src="images/wishlist.jpg"></a></div>
+<p id="wishlistitems"><b>0</b></p>&nbsp &nbsp <span id="items">Items</span>
+<div style="display:none" id="logout"><a href="logout.jsp">Log Out</a></div>
+<input type="text" id="username" placeholder="UserName">
+<input type="password" id="password" placeholder="Password">
+<input type="button" onclick="validate()" id="loginbutton" style="background-image:url(images/key.png);">
+</form>
+</div>
+<div class="first">
+<img src="#" id="slide">
+<script>slideit()</script>
+<ol id="scroll">
+
+<li></li>
+<li></li>
+<li></li>
+</ol>
+
+<div class="nav">
+<h4 id="cartincrement">0</h4>
+<a href="showcart.jsp"><img src="images/addtocart.png" id="cartlogo">
+<p><b>Cart</b></p></a>
+<hr>
+</div>
+</div>
+
+<a href="signup.html" onclick="signup()"><img src="images/signup.gif" id="signuplogo" style="cursor:pointer"></a>
+</div>
+<div class="adv">
+<h4>Best Selling Books</h4><span style="font-size:15px;font-family:monospace;color:#FA8072;position:absolute;top:16px;left:280px;"><b>Click to add to cart</b></span>
+<a href="#" onclick='cart("p1.jpg")'><img src="images/p1.jpg" class="ad"></a><span class="price">$45<a href="#" onclick='wishlist("p1.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p2.jpg")'><img src="images/p2.jpg" class="ad"></a><span class="price">$89<a href="#" onclick='wishlist("p2.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p3.jpg")'><img src="images/p3.jpg" class="ad"></a><span class="price">$24.67<a href="#" onclick='wishlist("p3.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p4.jpg")'><img src="images/p4.jpg" class="ad"></a><span class="price">$145.98<a href="#" onclick='wishlist("p4.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p5.jpg")'><img src="images/p5.jpg" class="ad"></a><span class="price">$22.55<a href="#" onclick='wishlist("p5.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p6.jpg")'><img src="images/p6.jpg" class="ad"></a><span class="price">$45.90<a href="#" onclick='wishlist("p6.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p7.jpg")'><img src="images/p7.jpg" class="ad"></a><span class="price">$121.45<a href="#" onclick='wishlist("p7.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p8.jpg")'><img src="images/p8.jpg" class="ad"></a><span class="price">$189.64<a href="#" onclick='wishlist("p8.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span><br><br><br>
+
+<h3>Thriller's & Suspense,Historical,Arts & Photography,Comics,Humor & Entertainment,Sports & Outdoors,Travel,Mystery,Thriller & Suspense</h3><span style="font-size:15px;font-family:monospace;color:#FA8072;position:absolute;top:308px;right:475px;"><b>Click to add to cart</b></span>
+<a href="#" onclick='cart("p9.jpg")'><img src="images/p9.jpg" class="ad"></a><span class="price1">$145<a href="#" onclick='wishlist("p9.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p10.jpg")'><img src="images/p10.jpg" class="ad"></a><span class="price1">$59<a href="#" onclick='wishlist("p10.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p11.jpg")'><img src="images/p11.jpg" class="ad"></a><span class="price1">$224.5<a href="#" onclick='wishlist("p11.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p12.jpg")'><img src="images/p12.jpg" class="ad"></a><span class="price1">$105<a href="#" onclick='wishlist("p12.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p13.jpg")'><img src="images/p13.jpg" class="ad"></a><span class="price1">$52.15<a href="#" onclick='wishlist("p13.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p14.jpg")'><img src="images/p14.jpg" class="ad"></a><span class="price1">$15.10<a href="#" onclick='wishlist("p14.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p15.jpg")'><img src="images/p15.jpg" class="ad"></a><span class="price1">$151.05<a href="#" onclick='wishlist("p15.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p16.jpg")'><img src="images/p16.jpg" class="ad"></a><span class="price1">$200.10<a href="#" onclick='wishlist("p16.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span><br><br><br><br><br>
+
+<a href="#" onclick='cart("p18.jpg")'><img src="images/p18.jpg" class="ad"></a><span class="price2">$85.46<a href="#" onclick='wishlist("p18.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p19.jpg")'><img src="images/p19.jpg" class="ad"></a><span class="price2">$50.5<a href="#" onclick='wishlist("p19.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p20.jpg")'><img src="images/p20.jpg" class="ad"></a><span class="price2">$100.5<a href="#" onclick='wishlist("p20.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p21.jpg")'><img src="images/p21.jpg" class="ad"></a><span class="price2">$10.96<a href="#" onclick='wishlist("p21.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p22.jpg")'><img src="images/p22.jpg" class="ad"></a><span class="price2">$40.15<a href="#" onclick='wishlist("p22.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p23.jpg")'><img src="images/p23.jpg" class="ad"></a><span class="price2">$70.10<a href="#" onclick='wishlist("p23.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p24.jpg")'><img src="images/p24.jpg" class="ad"></a><span class="price2">$90.05<a href="#" onclick='wishlist("p24.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p25.jpg")'><img src="images/p25.jpg" class="ad"></a><span class="price2">$120.19<a href="#" onclick='wishlist("p25.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span><br><br><br><br><br>
+
+<a href="#" onclick='cart("p26.jpg")'><img src="images/p26.jpg" class="ad"></a><span class="price3">$35<a href="#" onclick='wishlist("p26.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p27.jpg")'><img src="images/p27.jpg" class="ad"></a><span class="price3">$150.55<a href="#" onclick='wishlist("p27.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p28.jpg")'><img src="images/p28.jpg" class="ad"></a><span class="price3">$75.12<a href="#" onclick='wishlist("p28.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p29.jpg")'><img src="images/p29.jpg" class="ad"></a><span class="price3">$98.16<a href="#" onclick='wishlist("p29.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p30.jpg")'><img src="images/p30.jpg" class="ad"></a><span class="price3">$140.95<a href="#" onclick='wishlist("p30.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p31.jpg")'><img src="images/p31.jpg" class="ad"></a><span class="price3">$100.41<a href="#" onclick='wishlist("p31.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p32.jpg")'><img src="images/p32.jpg" class="ad"></a><span class="price3">$40.45<a href="#" onclick='wishlist("p32.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+<a href="#" onclick='cart("p33.jpg")'><img src="images/p33.jpg" class="ad"></a><span class="price3">$220.9<a href="#" onclick='wishlist("p33.jpg")'><img src="images/wi.png" class="wi" title="Add To WishList"></a></span>
+
+</div>
+
+<footer>
+<a href="#"><p style="margin-left:25px;margin-top:5px;">About Us</p></a>
+<pre style="font-size:16px;margin-left:60px;position:relative;top:-42px;left:250px;color:#F0F8FF">We provide quality to customers through our products we know that customers 
+          are our need and we do everything to keep them our's....</pre>
+<a href="#"><p style="margin-left:1125px;position:relative;top:-90px;left:90px;">Contact Us</p></a>
+</footer>
+<div style="width:100%";height:100px;>
+<img src="images/thankyou.png" width="100%" height="100px">
+</div>
+<input type="hidden" id="user">
+<input type="hidden" id="cartcount">
+<input type="hidden" id="wishcount">
+</body>
+</html>

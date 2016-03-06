@@ -1,0 +1,73 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<style>
+#submit
+{
+  margin-left:120px;
+}
+
+
+#close
+{
+    margin-left:40px;
+}
+
+</style>
+</head>
+<body style="background-color:#DCDCDC;">
+   <div class="container centered">
+      <div class="row">
+           <div class="col-xs-6 col-xs-offset-4" style="margin-top:70px">
+			        
+					  <h3 style="margin-bottom:15px">Please Enter Your Details To Register</h3>
+					  <p><form action="signup.jsp" method="post" class="form-horizontal" id="form">
+				  <div class="form-group">
+				  <label for="usr" class="col-sm-2 control-label">Username</label>
+				  <div class="col-sm-6">
+				  <input type="text" class="form-control" id="usr" name="username"/>
+				  </div> 
+				  </div>
+				  <div class="form-group">
+				  <label for="password" class="col-sm-2 control-label">Password</label>
+				  <div class="col-sm-6">
+				  <input type="password" class="form-control" id="password" name="pass"/>
+				  </div>
+				  </div>
+				  
+				  <div class="form-group">
+                  <label class="control-label col-sm-2" for="usr">FirstName</label>
+                  <div class="col-sm-6">
+                  <input type="text" class="form-control" id="usr" placeholder="" name="firstname">
+                  </div>
+                  </div>
+				  
+				  <div class="col-sm-4">
+				  <div class="form-group">
+				  <input type="submit" class="btn btn-default" id="submit" value="Submit"/>
+				  </div>
+			      </div>  
+				</form>
+				</p>
+					
+					<div class="col-sm-6">
+					<div class="footer">
+					     <button type="button" class="btn btn-default" onclick="window.location.href='index.html'" id="close">Close</button>
+					</div>
+					</div>
+         </div>
+         	
+		 
+     </div>
+ </div>
+
+</body>
+</html>
